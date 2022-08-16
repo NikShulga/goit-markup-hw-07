@@ -1,0 +1,21 @@
+.address {
+    font-style: inherit;
+    color: rgba(255, 255, 255, 0.6);
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 9px;
+    }
+    
+    &__link[target='_blank'] {
+        color: var(--text-title);
+        transition: color var(--transition);
+    }
+    
+    &__link:hover,
+    &__link:focus {
+            color: var(--text-link-act);
+            fill: var(--text-link-act);
+        }
+}

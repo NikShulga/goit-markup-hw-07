@@ -1,0 +1,122 @@
+.reqister-form {
+    text-align: center;
+}
+
+.reqister-form-title {
+    display: block;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    color: var(--text-color-main);
+}
+
+.reqister-form-group {
+    margin-bottom: 20px;
+}
+
+.reqister-form-wrap {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+
+    &:last-child {
+            margin-bottom: 0;
+        }
+}
+
+.position-icon {
+    position: relative;
+}
+
+.reqister-form-label {
+    text-align: left;
+    margin-bottom: 4px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+}
+
+.reqister-form-input {
+    height: 40px;
+}
+
+.reqister-form-input,
+.reqister-form-message {
+    width: 100%;
+    padding: 11px 42px;
+    fill: var(--text-color-main);
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: transparent;
+    transition: border var(--transition);
+
+        &:focus,
+        &:hover {
+            border: 1px solid var(--text-link-act);
+        }
+}
+
+.reqister-form-icon {
+    transition: fill var(--transition);
+    position: absolute;
+        left: 12px;
+        top: 50%;
+        transform: translateY(-50%);
+
+    .reqister-form-input:focus+&,
+    .reqister-form-input:hover+& {
+        fill: var(--text-link-act);
+    }
+}
+
+
+.reqister-form-message {
+    resize: none;
+    height: 120px;
+    padding: 12px 16px;
+
+    &::placeholder {
+            line-height: 1.14;
+            letter-spacing: 0.01em;
+            color: rgba(117, 117, 117, 0.5);
+        }
+}
+
+.reqister-form-agreement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.reqister-form-uncheck {
+    transition: fill var(--transition);
+
+        .reqister-checkbox:hover+.reqister-check &,
+        .reqister-checkbox:focus+.reqister-check & {
+            fill: var(--text-link-act);
+        }
+}
+
+.reqister-form-check {
+    opacity: 0;
+    transition: opacity var(--transition);
+
+    .reqister-checkbox:checked+.reqister-check & {
+            opacity: 1;
+        }
+}
+
+.checkbox-text {
+    user-select: none;
+}
+
+.checkbox-link {
+    color: var(--text-link-act);
+    text-underline-position: under;
+}
+

@@ -1,0 +1,16 @@
+.card-set {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--cadr-gap);
+
+    & .team__card {
+            padding-bottom: 30px;
+        }
+}
+
+.card-item {
+    flex-basis: calc((100% - (var(--card-item) - 1) * var(--cadr-gap)) / var(--card-item));
+.about__list & {
+        position: relative;
+    }
+}

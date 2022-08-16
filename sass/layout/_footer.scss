@@ -1,0 +1,41 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--bgcolor-hero);
+
+    &__box {
+        display: flex;
+        gap: 70px;
+        align-items: baseline;
+    }
+    
+    & .social__link {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+    
+    &__social--icon {
+        fill: var(--text-title);
+    }
+    
+    &__content--title {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1.14;
+        text-transform: uppercase;
+        color: var(--text-title);
+        margin-bottom: 20px;
+    }
+    
+    & .logo {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    &__content:last-child {
+        margin-left: auto;
+    }
+}
+
+.logo--footer {
+    color: var(--text-title);
+}

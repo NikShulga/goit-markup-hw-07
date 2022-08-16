@@ -1,0 +1,50 @@
+.header {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    border-bottom: 1px solid var(--border);
+
+        &__container {
+            display: flex;
+            align-items: center;
+        }
+    
+        &__contact {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+            gap: 30px;
+        }
+        & .logo {
+            margin-right: 93px;
+        }
+        &__contact--link {
+        display: flex;
+        align-items: center;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        transition: color var(--transition);
+        }
+        &__contact--link:hover,
+        &__contact--link:focus {
+            color: var(--text-link-act);
+            fill: var(--text-link-act);
+        }
+}
+
+.logo--header {
+    color: var(--logo-color);
+}
+.header__contact--item {
+    display: flex;
+    align-items: center;
+}
+.contact--icon {
+    fill: currentColor;
+}
+
+.header__contact--icon {
+    margin-right: 10px;
+}
+
+

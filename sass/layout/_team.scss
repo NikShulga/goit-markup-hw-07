@@ -1,0 +1,35 @@
+.team {
+    background-color: var(--bgcolor-team);
+
+    &__profession,
+    &__name {
+        font-size: 16px;
+        line-height: 1.19;
+        text-align: center;
+    }
+    
+    &__foto {
+        margin-bottom: 30px;
+    }
+    
+    &__name {
+        font-weight: 500;
+        margin-bottom: 10px;
+        color: var(--text-color-main);
+    }
+    
+    & .social {
+        margin-top: 16px;
+    }
+    &__card {
+        background-color: var(--text-title);
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+            0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+    }
+    &__icon:hover,
+    &__icon:focus {
+        background-color: var(--text-link-act);
+        fill: var(--text-title);
+    }
+}
