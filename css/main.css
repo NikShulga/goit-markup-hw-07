@@ -78,16 +78,10 @@ img {
       flex-wrap: wrap;
   gap: var(--cadr-gap);
 }
-.card-set .team__card {
-  padding-bottom: 30px;
-}
 
 .card-item {
   -ms-flex-preferred-size: calc((100% - (var(--card-item) - 1) * var(--cadr-gap)) / var(--card-item));
       flex-basis: calc((100% - (var(--card-item) - 1) * var(--cadr-gap)) / var(--card-item));
-}
-.about__list .card-item {
-  position: relative;
 }
 
 .btn {
@@ -436,7 +430,7 @@ img {
           justify-content: center;
   width: 44px;
   height: 44px;
-  background-color: var(--text-title);
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   fill: var(--icon-color);
   -webkit-transition: background-color var(--transition), fill var(--transition);
@@ -705,6 +699,10 @@ img {
   color: var(--text-color-main);
 }
 
+.about__list .card-item {
+  position: relative;
+}
+
 .about {
   padding-top: 0;
 }
@@ -755,6 +753,10 @@ img {
   fill: var(--text-title);
 }
 
+.card-set .team__card {
+  padding-bottom: 30px;
+}
+
 .client {
   --card-item: 6;
 }
@@ -795,9 +797,6 @@ img {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-}
-.footer .social__link {
-  background-color: rgba(255, 255, 255, 0.1);
 }
 .footer__social--icon {
   fill: var(--text-title);
